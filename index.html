@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Colegiados CQFDC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon -->
+    <link href="vistas/img/logo.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="vistas/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="vistas/lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="vistas/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template Stylesheet -->
+    <link href="vistas/css/style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Pasaje Las Golondrinas 192, Cajamarca</p>
+                <p><i class="fas fa-envelope"></i> Correo: secretariacqfdc@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> Teléfono: 076 625 837</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/CQFDC23.24" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/colegio-quimico-farmaceutico-de-cajamarca-369202256/?originalSubdomain=pe" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/cqfdc.oficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@cqfdc" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="logo-bar">
+            <img src="documentos/LOGO BN CQFDC.png" alt="Logo Colegio" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Normatividad</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Trámites</a></li>
+                    <li><a href="#">Gestión 2023-2024</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=91824062&text=Soporte Informático del CQFDC" class="whatsapp-button">Chatear <i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+        <div class="container">
+            <!-- <img src="documentos/LOGO FOTOS t.png" alt="Logo Institución" class="logo"> -->
+            <h1>Consulta de Colegiados CQFDC</h1>
+            <form id="searchForm">
+                <label for="searchType">Buscar por:</label>
+                <select id="searchType">
+                    <option value="N° CQFP">Número de Colegiatura</option>
+                    <option value="Apellidos y Nombres">Apellidos y Nombres</option>
+                </select>
+                <input type="text" id="query" placeholder="Ingrese su consulta">
+                <div class="button-group">
+                    <button type="button" class="search-button" onclick="performSearch()">Buscar</button>
+                    <button type="button" class="clear-button" onclick="clearSearch()">Nueva Búsqueda</button>
+                </div>
+            </form>
+            <div id="results"></div>
+
+        </div>
+
+    <footer>
+        <p>© 2024 Jhosmer Guevara Marín - Todos los derechos reservados.</p>
+        <p>Somos una institución comprometida con brindar la mejor atención y servicios.</p>
+        <p>Visítanos en nuestras redes sociales para más información y actualizaciones.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

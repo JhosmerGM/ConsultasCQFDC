@@ -88,4 +88,13 @@ document.getElementById('query').addEventListener('input', function() {
             this.value = value.replace(/[^a-zA-Z\s]/g, ''); // Eliminar caracteres no alfabéticos
         }
     }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active'); // Alternar la clase "active" para mostrar/ocultar el menú
+    });
 });

@@ -24,7 +24,6 @@ body, html {
 
 /* Header */
 header {
-    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -34,6 +33,7 @@ header {
     box-sizing: border-box;
     position: relative;
     z-index: 1;
+    /* display: flex; */
 }
 
 .logo {
@@ -146,6 +146,7 @@ nav ul li a {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: block; /* para que no se una el boton de wasa*/
 }
 
 .whatsapp-button:hover {
@@ -306,4 +307,87 @@ footer p {
 header > div {
     display: block;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-right {
+        margin-top: 10px;
+    }
+
+    /* Ajustes para top-bar */
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contact-info p, .social-icons {
+        margin: 5px 0;
+    }
+
+    /* Ajustes para logo-bar */
+    .logo-bar {
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+    }
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+            margin: 20px auto;
+        }
+    }
+    @media (max-width: 768px) {
+        .form-container {
+            width: 100%;
+        }
+    
+        .button-group {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .button-group button {
+            width: 100%; /* Los botones ocupan todo el ancho disponible */
+            margin: 5px 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .background-image {
+            background-position: top;
+        }
+    }
+
+    @media (max-width: 768px) {
+        footer {
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px; /* Reduce el tamaño de fuente en general */
+        }
+    
+        h1 {
+            font-size: 1.5em; /* Reduce el tamaño de encabezados */
+        }
+    
+        p, label, input, select {
+            font-size: 0.9em;
+        }
+    }
+    
+    
 }

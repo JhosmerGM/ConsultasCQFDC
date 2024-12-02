@@ -45,7 +45,12 @@ async function performSearch() {
             // Calcular si está habilitado
             const currentDate = new Date();
             const finalDate = new Date(item["Periodo Final"] + "-01");
-            const isEnabled = finalDate >= currentDate;
+            //const isEnabled = finalDate >= currentDate;
+            // Comparar año y mes
+            const isEnabled = (finalDate.getFullYear() > currentDate.getFullYear()) || 
+                              (finalDate.getFullYear() === currentDate.getFullYear() && finalDate.getMonth() >= currentDate.getMonth());
+
+
 
             const status = isEnabled ? "Habilitado" : "No Habilitado";
             const itemDiv = document.createElement('div');

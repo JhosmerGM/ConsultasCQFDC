@@ -3510,15 +3510,15 @@
         "CQFPLima": "31.50 "
     },
     {
-        "N° CQFP": "27468",
-        "Apellidos y Nombres": "GOICOCHEA CARRASCO SARITA ESTHER",
-        "Doc. Sustento": "B1-00000004",
-        "Fech. Doc.": "11/04/2024",
-        "Monto Total": "105.00 ",
-        "Periodo Inicial": "2024-01",
-        "Periodo Final": "2024-07",
-        "CQFD": "73.50 ",
-        "CQFPLima": "31.50 "
+            "N° CQFP": "27468",
+            "APELLIDOS Y NOMBRES": "GOICOCHEA CARRASCO SARITA ESTHER",
+            "Doc. Sustento": "B001-00000933",
+            "Fech. Documento": "27/08/2024",
+            "Monto Total": "90.00 ",
+            "Periodo Inicial": "2024-08",
+            "Periodo Final": "2025-01",
+            "CQFDC(70%)": "63.00 ",
+            "CQFDLima(30%)": "27.00"
     },
     {
         "N° CQFP": "34066",
